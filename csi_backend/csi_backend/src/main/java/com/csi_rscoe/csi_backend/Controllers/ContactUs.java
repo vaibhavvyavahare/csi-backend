@@ -18,7 +18,7 @@ public class ContactUs {
   @PostMapping("/contactus")
     String contactUs(@RequestBody ContactMsg contactMsg){
 
-
+// targeted email ids
         emailService.sendEmail("bhavsarmayur664@gmail.com",
                 "New Contact Us Message from "+contactMsg.getName()+"  email:"+contactMsg.getEmail(),
                 contactMsg.getMsg());
